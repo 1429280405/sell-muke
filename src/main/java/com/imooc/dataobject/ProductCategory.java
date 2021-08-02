@@ -30,7 +30,7 @@ public class ProductCategory {
 
     private Date createTime;
 
-//    private Date updateTime;
+    private Date updateTime;
 
     public ProductCategory() {
     }
