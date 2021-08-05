@@ -1,5 +1,7 @@
 package com.imooc.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.imooc.dataobject.OrderDetail;
 import com.imooc.enums.OrderStatusEnum;
 import com.imooc.enums.PayStatusEnum;
@@ -15,6 +17,7 @@ import java.util.List;
  * @create 2021-08-03 22:58
  */
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class OrderDTO {
     /**
      * 订单id.

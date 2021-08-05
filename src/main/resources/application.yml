@@ -9,3 +9,6 @@ spring:
 server:
   servlet:
     context-path: /sell
+
+  jackson:
+    default-property-inclusion: non_null
