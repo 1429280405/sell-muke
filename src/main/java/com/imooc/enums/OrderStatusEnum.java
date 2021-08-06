@@ -3,21 +3,22 @@ package com.imooc.enums;
 import lombok.Getter;
 
 /**
- * @author liujinqiang
- * @create 2021-08-03 22:17
+ * Created by 廖师兄
+ * 2017-06-11 17:12
  */
 @Getter
-public enum OrderStatusEnum {
-    NEW(0,"新订单"),
-    FINISHED(1,"完结"),
-    CANCEL(2,"已取消")
+public enum OrderStatusEnum implements CodeEnum {
+    NEW(0, "新订单"),
+    FINISHED(1, "完结"),
+    CANCEL(2, "已取消"),
     ;
 
     private Integer code;
-    private String msg;
 
-    OrderStatusEnum(Integer code, String msg) {
+    private String message;
+
+    OrderStatusEnum(Integer code, String message) {
         this.code = code;
-        this.msg = msg;
+        this.message = message;
     }
 }
