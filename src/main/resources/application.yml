@@ -6,6 +6,11 @@ spring:
     url: jdbc:mysql://192.168.101.10:3306/sell?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
+  thymeleaf:
+    prefix: classpath:/templates/
+  redis:
+    host: 192.168.101.10
+    port: 6379
 server:
   servlet:
     context-path: /sell
@@ -22,9 +27,11 @@ wechat:
   mchId: 1483469312
   mchKey: 06C56A89949D617xxxxxxxxxxx
   keyPath: E:/wechat/h5.p12
-  notifyUrl: http://9zfdyb.natappfree.cc/pay/notify
+  notifyUrl: http://evbjvc.natappfree.cc/pay/notify
   templateId:
     orderStatus: e-Cqq67QxD6YNI41iRiqawEYdFavW_7pc7LyEMb-yeQ
 
-project-url:
-  wechatMpAuthorize: http://9zfdyb.natappfree.cc
+projectUrl:
+  wechatMpAuthorize: http://evbjvc.natappfree.cc
+  wechatOpenAuthorize: http://evbjvc.natappfree.cc
+  sell: http://evbjvc.natappfree.cc

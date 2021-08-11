@@ -2,34 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a299e4f-7f33-47fa-9357-706d321b407b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/config/ProjectUrlConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/config/WechatAccountConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/config/WechatMpConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/config/WechatPayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/controller/PayController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/controller/SellerOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/controller/WechatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/enums/CodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/service/PayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/service/impl/PayServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/util/EnumUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/util/MathUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/util/serializer/Date2LongSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/api/ratings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/api/seller.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/orders/list.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pay/create.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pay/success.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/imooc/service/impl/PayServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/aspect/SellerAuthorizeAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/config/WechatOpenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/constans/CookieConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/constans/RedisConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/controller/SellerCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/controller/SellerProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/controller/SellerUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/exception/SellerAuthorizeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/form/CategoryForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/form/ProductForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/handler/SellExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/service/PushMessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/service/SellerInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/service/WebSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/service/impl/PushMessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/service/impl/SellerInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/util/CookieUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/index.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/category/list.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/error.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/header.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/nav.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/success.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order/detail.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/product/index.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/product/list.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/imooc/service/impl/SellerInfoServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sell.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sell.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/dto/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/enums/OrderStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/enums/OrderStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/enums/PayStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/enums/PayStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/config/ProjectUrlConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/config/ProjectUrlConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/config/WechatAccountConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/config/WechatAccountConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/controller/SellerOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/controller/SellerOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/controller/WechatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/controller/WechatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/dataobject/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/dataobject/ProductInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/enums/ProductStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/enums/ProductStatusEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/service/impl/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/imooc/service/impl/OrderServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/imooc/service/impl/OrderServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/orders/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/imooc/service/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/imooc/service/ProductServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +58,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -85,7 +97,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/imooc/enums" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/imooc/config" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -101,72 +113,24 @@
       <recent name="com.imooc.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace_idea\sell-muke\src\main\java\com\imooc\enums" />
+      <recent name="E:\workspace_idea\sell-muke\src\main\java\com\imooc\config" />
       <recent name="E:\workspace_idea\sell-muke\src\main\java\com\imooc\util" />
-      <recent name="E:\workspace_idea\sell-muke\src\main\resources\static\api" />
-      <recent name="E:\workspace_idea\sell-muke\src\main\resources\templates\pay" />
-      <recent name="E:\workspace_idea\sell-muke\src\main\resources\static" />
+      <recent name="E:\workspace_idea\sell-muke\src\main\resources\templates" />
+      <recent name="E:\workspace_idea\sell-muke\src\main\java\com\imooc\controller" />
+      <recent name="E:\workspace_idea\sell-muke\src\main\java\com\imooc\form" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.imooc.exception" />
       <recent name="com.imooc.service" />
       <recent name="com.imooc.convert" />
       <recent name="com.imooc.form" />
       <recent name="com.imooc.enums" />
-      <recent name="com.imooc.exception" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SellApplication">
-    <configuration name="OrderServiceImplTest.cancel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sell" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.imooc.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.imooc.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.imooc.service.impl.OrderServiceImplTest" />
-      <option name="METHOD_NAME" value="cancel" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderServiceImplTest.finish" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sell" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.imooc.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.imooc.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.imooc.service.impl.OrderServiceImplTest" />
-      <option name="METHOD_NAME" value="finish" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderServiceImplTest.paid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sell" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.imooc.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.imooc.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.imooc.service.impl.OrderServiceImplTest" />
-      <option name="METHOD_NAME" value="paid" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="OrderServiceImplTest.testFindList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sell" />
       <extension name="coverage">
@@ -199,6 +163,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductServiceTest.offSale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sell" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.imooc.service" />
+      <option name="MAIN_CLASS_NAME" value="com.imooc.service.ProductServiceTest" />
+      <option name="METHOD_NAME" value="offSale" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.onSale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sell" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.imooc.service" />
+      <option name="MAIN_CLASS_NAME" value="com.imooc.service.ProductServiceTest" />
+      <option name="METHOD_NAME" value="onSale" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SellerInfoServiceImplTest.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sell" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.imooc.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.imooc.service.impl.SellerInfoServiceImplTest" />
+      <option name="METHOD_NAME" value="testFind" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SellApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="sell" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.imooc.SellApplication" />
@@ -208,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SellerInfoServiceImplTest.testFind" />
+        <item itemvalue="JUnit.ProductServiceTest.onSale" />
+        <item itemvalue="JUnit.ProductServiceTest.offSale" />
         <item itemvalue="JUnit.OrderServiceImplTest.testFindList" />
         <item itemvalue="JUnit.PayServiceImplTest.create" />
-        <item itemvalue="JUnit.OrderServiceImplTest.paid" />
-        <item itemvalue="JUnit.OrderServiceImplTest.finish" />
-        <item itemvalue="JUnit.OrderServiceImplTest.cancel" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +242,10 @@
       <option name="presentableId" value="Default" />
       <updated>1627916756384</updated>
       <workItem from="1627916761508" duration="31212000" />
-      <workItem from="1628093625506" duration="31509000" />
+      <workItem from="1628093625506" duration="38533000" />
+      <workItem from="1628471061516" duration="4958000" />
+      <workItem from="1628492946632" duration="3575000" />
+      <workItem from="1628497403113" duration="9519000" />
     </task>
     <task id="LOCAL-00001" summary="恢复修改时间字段">
       <created>1627916841794</created>
@@ -295,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628132247773</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="新增微信授权下单相关文件。">
+      <created>1628266380092</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1628266380092</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,33 +346,38 @@
     <MESSAGE value="新增订单相关文件与用户相关文件。" />
     <MESSAGE value="2021-08-05" />
     <MESSAGE value="新增用户创建、查询、撤销订单等相关文件。" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增用户创建、查询、撤销订单等相关文件。" />
+    <MESSAGE value="新增微信授权下单相关文件。" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增微信授权下单相关文件。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="518" y="202" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1628147300085">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="518" y="202" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1628147300084" />
-    <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1628213625875">
+    <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1628557571099">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1628213625875" />
+    <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1628557571099" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1627966803066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1627966803066" />
-    <state x="524" y="28" width="812" height="767" key="#xdebugger.evaluate" timestamp="1628248469080">
+    <state x="678" y="83" key="#xdebugger.XInspectDialog" timestamp="1628496919291">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="524" y="28" width="812" height="767" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1628248469080" />
-    <state x="370" y="0" key="CommitChangelistDialog2" timestamp="1628132245780">
+    <state x="678" y="83" key="#xdebugger.XInspectDialog/0.0.1536.824@0.0.1536.824" timestamp="1628496919291" />
+    <state x="524" y="28" width="812" height="767" key="#xdebugger.evaluate" timestamp="1628496922558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="370" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1628132245780" />
-    <state width="470" height="640" key="DebuggerActiveHint" timestamp="1628266124582">
+    <state x="524" y="28" width="812" height="767" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1628496922558" />
+    <state x="370" y="0" key="CommitChangelistDialog2" timestamp="1628266375394">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="470" height="640" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1628266124582" />
+    <state x="370" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1628266375394" />
+    <state width="470" height="640" key="DebuggerActiveHint" timestamp="1628504905575">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="470" height="640" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1628504905575" />
     <state x="161" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1628093796949">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -359,54 +386,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1627966570729" />
-    <state width="1493" height="238" key="GridCell.Tab.0.bottom" timestamp="1628266128069">
+    <state width="1493" height="253" key="GridCell.Tab.0.bottom" timestamp="1628504912944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628266128069" />
-    <state width="1493" height="238" key="GridCell.Tab.0.center" timestamp="1628266128069">
+    <state width="1493" height="253" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628504912944" />
+    <state width="1493" height="253" key="GridCell.Tab.0.center" timestamp="1628504912944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1628266128069" />
-    <state width="1493" height="238" key="GridCell.Tab.0.left" timestamp="1628266128069">
+    <state width="1493" height="253" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1628504912944" />
+    <state width="1493" height="253" key="GridCell.Tab.0.left" timestamp="1628504912944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1628266128069" />
-    <state width="1493" height="238" key="GridCell.Tab.0.right" timestamp="1628266128069">
+    <state width="1493" height="253" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1628504912944" />
+    <state width="1493" height="253" key="GridCell.Tab.0.right" timestamp="1628504912944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1628266128069" />
-    <state width="1493" height="238" key="GridCell.Tab.1.bottom" timestamp="1628266102923">
+    <state width="1493" height="253" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1628504912944" />
+    <state width="1493" height="253" key="GridCell.Tab.1.bottom" timestamp="1628504912944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628266102923" />
-    <state width="1493" height="238" key="GridCell.Tab.1.center" timestamp="1628266102922">
+    <state width="1493" height="253" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628504912944" />
+    <state width="1493" height="253" key="GridCell.Tab.1.center" timestamp="1628504912944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1628266102922" />
-    <state width="1493" height="238" key="GridCell.Tab.1.left" timestamp="1628266102922">
+    <state width="1493" height="253" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1628504912944" />
+    <state width="1493" height="253" key="GridCell.Tab.1.left" timestamp="1628504912944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1628266102922" />
-    <state width="1493" height="238" key="GridCell.Tab.1.right" timestamp="1628266102923">
+    <state width="1493" height="253" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1628504912944" />
+    <state width="1493" height="253" key="GridCell.Tab.1.right" timestamp="1628504912944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1628266102923" />
-    <state width="1493" height="238" key="GridCell.Tab.2.bottom" timestamp="1628266069667">
+    <state width="1493" height="253" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1628504912944" />
+    <state width="1493" height="253" key="GridCell.Tab.2.bottom" timestamp="1628504912944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628266069667" />
-    <state width="1493" height="238" key="GridCell.Tab.2.center" timestamp="1628266069666">
+    <state width="1493" height="253" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1628504912944" />
+    <state width="1493" height="253" key="GridCell.Tab.2.center" timestamp="1628504912944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1628266069666" />
-    <state width="1493" height="238" key="GridCell.Tab.2.left" timestamp="1628266069666">
+    <state width="1493" height="253" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1628504912944" />
+    <state width="1493" height="253" key="GridCell.Tab.2.left" timestamp="1628504912944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1628266069666" />
-    <state width="1493" height="238" key="GridCell.Tab.2.right" timestamp="1628266069667">
+    <state width="1493" height="253" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1628504912944" />
+    <state width="1493" height="253" key="GridCell.Tab.2.right" timestamp="1628504912944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="238" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1628266069667" />
+    <state width="1493" height="253" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1628504912944" />
     <state x="270" y="54" key="SettingsEditor" timestamp="1628157328609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -415,38 +442,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="599" y="281" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1628066951066" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1628132250269">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1628266385289">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1628132250269" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1628266385289" />
     <state x="561" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628006274443">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="561" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1628006274443" />
-    <state x="910" y="103" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1628175360666">
+    <state x="910" y="103" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1628483673070">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="910" y="103" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1628175360666" />
+    <state x="910" y="103" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1628483673070" />
     <state x="318" y="66" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1628087592708">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="318" y="66" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1628087592708" />
-    <state x="437" y="129" width="662" height="566" key="find.popup" timestamp="1628093365053">
+    <state x="437" y="129" width="662" height="566" key="find.popup" timestamp="1628495508598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="437" y="129" width="662" height="566" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1628093365053" />
-    <state x="471" y="185" key="git4idea.merge.GitPullDialog" timestamp="1628066248411">
+    <state x="437" y="129" width="662" height="566" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1628495508598" />
+    <state x="471" y="185" key="git4idea.merge.GitPullDialog" timestamp="1628475085863">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="471" y="185" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1628066248411" />
+    <state x="471" y="185" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1628475085863" />
     <state x="594" y="307" key="git4idea.ui.GitStashDialog" timestamp="1628093505219">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="594" y="307" key="git4idea.ui.GitStashDialog/0.0.1536.824@0.0.1536.824" timestamp="1628093505219" />
-    <state x="858" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1628265908615">
+    <state x="858" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1628557369081">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="858" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1628265908615" />
+    <state x="858" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1628557369081" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -462,8 +489,13 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/imooc/controller/SellerOrderController.java</url>
-          <line>34</line>
+          <url>jar://$MAVEN_REPOSITORY$/com/github/binarywang/weixin-java-mp/2.7.0/weixin-java-mp-2.7.0.jar!/me/chanjar/weixin/mp/api/impl/AbstractWxMpServiceImpl.class</url>
+          <line>174</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/imooc/aspect/SellerAuthorizeAspect.java</url>
+          <line>39</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>

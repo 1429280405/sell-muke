@@ -16,4 +16,14 @@ public class ProjectUrlConfig {
      * 微信公众平台授权url
      */
     public String wechatMpAuthorize;
+
+    /**
+     * 开放平台授权url
+     */
+    public String wechatOpenAuthorize;
+
+    /**
+     * 点餐系统
+     */
+    public String sell;
 }

@@ -63,4 +63,16 @@ class ProductServiceTest {
         ProductInfo result = productService.save(productInfo);
         Assert.assertNotNull(result);
     }
+
+    @Test
+    void onSale(){
+        ProductInfo productInfo = productService.onSale("1234");
+        Assert.assertNotNull(productInfo);
+    }
+
+    @Test
+    void offSale(){
+        ProductInfo productInfo = productService.offSale("1234");
+        Assert.assertNotNull(productInfo);
+    }
 }
