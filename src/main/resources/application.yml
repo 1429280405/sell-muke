@@ -35,3 +35,7 @@ projectUrl:
   wechatMpAuthorize: http://evbjvc.natappfree.cc
   wechatOpenAuthorize: http://evbjvc.natappfree.cc
   sell: http://evbjvc.natappfree.cc
+
+logging:
+  level:
+    com.imooc.dataobject.mapper: trace
