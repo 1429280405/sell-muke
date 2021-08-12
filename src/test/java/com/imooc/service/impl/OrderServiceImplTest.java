@@ -105,5 +105,10 @@ class OrderServiceImplTest {
 
     @Test
     void testFindList() {
+        PageRequest request = PageRequest.of(1,2);
+        Page<OrderDTO> list = orderService.findList(request);
+        log.info("list:{}",list);
+        Assert.assertNotNull(list);
     }
+
 }
