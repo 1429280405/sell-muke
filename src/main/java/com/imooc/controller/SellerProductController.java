@@ -8,17 +8,14 @@ import com.imooc.service.CategoryService;
 import com.imooc.service.ProductService;
 import com.imooc.util.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
-import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
@@ -142,5 +139,14 @@ public class SellerProductController {
         }
         map.put("url", "/sell/seller/product/list");
         return new ModelAndView("common/success", map);
+    }
+
+
+
+    @GetMapping("/findOne")
+    @ResponseBody
+    public ProductInfo findOne(@RequestParam(value = "productId") String productId) {
+            ProductInfo productInfo = productService.findOne(productId);
+            return productInfo;
     }
 }

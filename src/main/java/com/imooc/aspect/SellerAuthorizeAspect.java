@@ -34,7 +34,7 @@ public class SellerAuthorizeAspect {
     "&& !execution(public * com.imooc.controller.SellerUserController.*(..))")
     public void verify(){}
 
-    @Before("verify()")
+/*    @Before("verify()")
     public void doVerify(){
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
@@ -50,5 +50,5 @@ public class SellerAuthorizeAspect {
             throw new SellerAuthorizeException();
         }
 
-    }
+    }*/
 }

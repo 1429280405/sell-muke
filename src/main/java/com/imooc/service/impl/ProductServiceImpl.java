@@ -10,6 +10,7 @@ import com.imooc.repository.ProductInfoRepository;
 import com.imooc.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -51,6 +52,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    @CachePut(key = "123")
     public ProductInfo save(ProductInfo productInfo) {
         return productInfoRepository.save(productInfo);
     }
